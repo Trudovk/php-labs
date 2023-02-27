@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа 2.1</title>
+    <title>Лабораторная работа 4.1</title>
     <style>
         header {
             display: flex;
@@ -76,7 +76,7 @@
 <body>
     <header>
         <img src="./images/wpolylogo.png" alt="logo">
-        <h1>Лабораторная работа 2.1</h1>
+        <h1>Лабораторная работа 4.1</h1>
         <a href="index.php">Главная</a>
     </header>
     <main>
