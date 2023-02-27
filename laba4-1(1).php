@@ -55,6 +55,17 @@
             text-align: center;
 
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .nextpage {
+            margin: 0 auto;
+            max-width: 200px;
+        }
     </style>
 </head>
 
@@ -65,9 +76,25 @@
         <a href="index.php">Главная</a>
     </header>
     <main>
-        <?php
-        echo date("d.m.Y H:i:s");
-        ?>
+        <form method="POST" action="https://httpbin.org/post">
+            <label>Имя пользователя:</label>
+            <input type="text" name="name"><br><br>
+            <label>E-mail пользователя:</label>
+            <input type="email" name="email"><br><br>
+            <label>Тип обращения:</label>
+            <select name="type">
+                <option value="complaint">Жалоба</option>
+                <option value="proposal">Предложение</option>
+                <option value="thanks">Благодарность</option>
+            </select><br><br>
+            <label>Текст обращения:</label><br>
+            <textarea name="message"></textarea><br><br>
+            <label>Вариант ответа:</label>
+            <input type="checkbox" name="response" value="sms">СМС
+            <input type="checkbox" name="response" value="email">E-mail<br><br>
+            <input type="submit" name="submit" value="Отправить">
+        </form>
+        <a class="nextpage" href="laba4-1(2).php">Перейти на 2 страницу</a>
     </main>
     <footer>
         Сделано Кошелевым Егором из группы 221-323 для предмета Основы серверной веб-разработки

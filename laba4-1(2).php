@@ -53,7 +53,22 @@
             margin: 0;
             min-height: 100vh;
             text-align: center;
+        }
 
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        textarea {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .nextpage {
+            margin: 0 auto;
+            max-width: 200px;
         }
     </style>
 </head>
@@ -65,9 +80,11 @@
         <a href="index.php">Главная</a>
     </header>
     <main>
-        <?php
-        echo date("d.m.Y H:i:s");
-        ?>
+        <textarea cols="80" rows="20"><?php
+                                        print_r(get_headers('https://www.google.com/'));
+                                        ?></textarea>
+        <a class="nextpage" href="laba4-1(1).php">Перейти на 1 страницу</a>
+
     </main>
     <footer>
         Сделано Кошелевым Егором из группы 221-323 для предмета Основы серверной веб-разработки

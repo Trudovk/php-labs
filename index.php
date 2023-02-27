@@ -44,7 +44,7 @@
 
 <body>
     <header>
-        <img src="/images/wpolylogo.png" alt="logo">
+        <img src="./images/wpolylogo.png" alt="logo">
         <h1>Кошелев Егор 221-323</h1>
     </header>
     <main>
@@ -53,6 +53,11 @@
             <li>
                 <a href="laba2-1.php">
                     Лабораторная работа 2.1 "Hello, word!"
+                </a>
+            </li>
+            <li>
+                <a href="laba4-1(1).php">
+                    Лабораторная работа 4.1
                 </a>
             </li>
         </ul>
